@@ -1,0 +1,47 @@
+version: "3"
+services:
+  jenkins:
+    container_name: jenkins
+    image: jenkins/jenkins
+    ports:
+      - "8080:8080"
+    volumes:
+      - "$PWD/jenkins_home:/var/jenkins_home" # hostDir:containerDir
+    networks:
+      - jenkins_net
+
+  # jenkins:
+  #   container_name: jenkins
+  #   image: jenkins-ansible
+  #   build:
+  #     context: jenkins-ansible
+  #   ports:
+  #     - "8080:8080"
+  #   volumes:
+  #     - "$PWD/jenkins_home:/var/jenkins_home" # hostDir:containerDir
+  #   networks:
+  #     - jenkins_net
+
+  remote_host:
+    container_name: remote-host
+    image: remote-host
+    # If remote-host image doesn't exist. build it
+    build:
+      context: centos8
+    ports:
+      - "22:22"
+    networks:
+      - jenkins_net
+
+  db_host:
+    container_name: db
+    image: mysql:5.7
+    environment:
+      - "MYSQL_ROOT_PASSWORD=1234"
+    volumes:
+      - "$PWD/db_data:/var/lib/mysql"
+    networks:
+      - jenkins_net
+# Create network
+networks:
+  jenkins_net:

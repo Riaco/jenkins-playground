@@ -1,0 +1,3 @@
+./centos8/remote-key
+./centos8/remote-key.pub
+./jenkins_home/secrets
