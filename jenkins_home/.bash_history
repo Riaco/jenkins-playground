@@ -78,3 +78,13 @@ rmp
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 rpm
 rpm
+cd /var/jenkins_home/
+ll
+ls -l
+cd workspace/
+ls -l
+cd maven-job
+ls -l
+ls -al
+ls -l
+cat pom.xml

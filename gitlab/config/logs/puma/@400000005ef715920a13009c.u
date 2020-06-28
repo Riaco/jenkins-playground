@@ -1,0 +1,14 @@
+2020-06-27_09:32:46.20174 {"timestamp":"2020-06-27T09:32:46.201Z","pid":2841,"message":"Puma starting in cluster mode..."}
+2020-06-27_09:32:46.20225 {"timestamp":"2020-06-27T09:32:46.201Z","pid":2841,"message":"* Version 4.3.3.gitlab.2 (ruby 2.6.6-p146), codename: Mysterious Traveller"}
+2020-06-27_09:32:46.20256 {"timestamp":"2020-06-27T09:32:46.201Z","pid":2841,"message":"* Min threads: 4, max threads: 4"}
+2020-06-27_09:32:46.20288 {"timestamp":"2020-06-27T09:32:46.201Z","pid":2841,"message":"* Environment: production"}
+2020-06-27_09:32:46.20336 {"timestamp":"2020-06-27T09:32:46.201Z","pid":2841,"message":"* Process workers: 6"}
+2020-06-27_09:32:46.20370 {"timestamp":"2020-06-27T09:32:46.201Z","pid":2841,"message":"* Preloading application"}
+2020-06-27_09:33:30.55660 {"timestamp":"2020-06-27T09:33:30.556Z","pid":2841,"message":"* Listening on unix:///var/opt/gitlab/gitlab-rails/sockets/gitlab.socket"}
+2020-06-27_09:33:30.55729 {"timestamp":"2020-06-27T09:33:30.557Z","pid":2841,"message":"* Listening on tcp://127.0.0.1:8080"}
+2020-06-27_09:33:30.55782 {"timestamp":"2020-06-27T09:33:30.557Z","pid":2841,"message":"! WARNING: Detected 3 Thread(s) started in app boot:"}
+2020-06-27_09:33:30.55822 {"timestamp":"2020-06-27T09:33:30.557Z","pid":2841,"message":"! #\u003cThread:0x00007f9dc631ccf0@/opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/concurrent-ruby-1.1.6/lib/concurrent-ruby/concurrent/atomic/ruby_thread_local_var.rb:38 sleep_forever\u003e - /opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/concurrent-ruby-1.1.6/lib/concurrent-ruby/concurrent/atomic/ruby_thread_local_var.rb:40:in `pop'"}
+2020-06-27_09:33:30.55865 {"timestamp":"2020-06-27T09:33:30.557Z","pid":2841,"message":"! #\u003cThread:0x00007f9db7a66060@/opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:334 sleep\u003e - /opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:337:in `sleep'"}
+2020-06-27_09:33:30.55910 {"timestamp":"2020-06-27T09:33:30.557Z","pid":2841,"message":"! #\u003cThread:0x00007f9da1c6f4d0@/opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/rack-timeout-0.5.1/lib/rack/timeout/support/scheduler.rb:73 sleep\u003e - /opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/rack-timeout-0.5.1/lib/rack/timeout/support/scheduler.rb:91:in `sleep'"}
+2020-06-27_09:33:30.55949 {"timestamp":"2020-06-27T09:33:30.558Z","pid":2841,"message":"Use Ctrl-C to stop"}
+2020-06-27_09:45:53.20745 Received TERM from runit, sending to process group (-PID)

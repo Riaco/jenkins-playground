@@ -1,0 +1,123 @@
+2020-06-27_09:47:30.59462 level=info ts=2020-06-27T09:47:30.594Z caller=main.go:295 msg="no time or size retention was set so using the default time retention" duration=15d
+2020-06-27_09:47:30.59538 level=info ts=2020-06-27T09:47:30.594Z caller=main.go:331 msg="Starting Prometheus" version="(version=2.16.0, branch=master, revision=)"
+2020-06-27_09:47:30.59601 level=info ts=2020-06-27T09:47:30.594Z caller=main.go:332 build_context="(go=go1.13.9, user=GitLab-Omnibus, date=)"
+2020-06-27_09:47:30.59642 level=info ts=2020-06-27T09:47:30.594Z caller=main.go:333 host_details="(Linux 4.19.76-linuxkit #1 SMP Tue May 26 11:42:35 UTC 2020 x86_64 gitlab.example.com (none))"
+2020-06-27_09:47:30.59701 level=info ts=2020-06-27T09:47:30.594Z caller=main.go:334 fd_limits="(soft=50000, hard=50000)"
+2020-06-27_09:47:30.59754 level=info ts=2020-06-27T09:47:30.594Z caller=main.go:335 vm_limits="(soft=unlimited, hard=unlimited)"
+2020-06-27_09:47:30.60585 level=info ts=2020-06-27T09:47:30.605Z caller=main.go:661 msg="Starting TSDB ..."
+2020-06-27_09:47:30.60645 level=info ts=2020-06-27T09:47:30.605Z caller=web.go:508 component=web msg="Start listening for connections" address=localhost:9090
+2020-06-27_09:47:30.64471 level=info ts=2020-06-27T09:47:30.644Z caller=head.go:577 component=tsdb msg="replaying WAL, this may take awhile"
+2020-06-27_09:47:30.77088 level=info ts=2020-06-27T09:47:30.770Z caller=head.go:625 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=2
+2020-06-27_09:47:30.91047 level=info ts=2020-06-27T09:47:30.910Z caller=head.go:625 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=2
+2020-06-27_09:47:30.91619 level=info ts=2020-06-27T09:47:30.916Z caller=head.go:625 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=2
+2020-06-27_09:47:30.93563 level=info ts=2020-06-27T09:47:30.935Z caller=main.go:676 fs_type=65735546
+2020-06-27_09:47:30.93620 level=info ts=2020-06-27T09:47:30.935Z caller=main.go:677 msg="TSDB started"
+2020-06-27_09:47:30.93672 level=info ts=2020-06-27T09:47:30.935Z caller=main.go:747 msg="Loading configuration file" filename=/var/opt/gitlab/prometheus/prometheus.yml
+2020-06-27_09:47:30.94752 level=error ts=2020-06-27T09:47:30.946Z caller=manager.go:342 component="discovery manager scrape" msg="Cannot create service discovery" err="unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=*kubernetes.SDConfig
+2020-06-27_09:47:30.94860 level=error ts=2020-06-27T09:47:30.946Z caller=manager.go:342 component="discovery manager scrape" msg="Cannot create service discovery" err="unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=*kubernetes.SDConfig
+2020-06-27_09:47:30.94919 level=error ts=2020-06-27T09:47:30.946Z caller=manager.go:342 component="discovery manager scrape" msg="Cannot create service discovery" err="unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=*kubernetes.SDConfig
+2020-06-27_09:47:30.98443 level=info ts=2020-06-27T09:47:30.984Z caller=main.go:775 msg="Completed loading of configuration file" filename=/var/opt/gitlab/prometheus/prometheus.yml
+2020-06-27_09:47:30.98593 level=info ts=2020-06-27T09:47:30.984Z caller=main.go:630 msg="Server is ready to receive web requests."
+2020-06-27_09:47:35.98569 level=error ts=2020-06-27T09:47:35.985Z caller=manager.go:193 component="scrape manager" msg="error creating new scrape pool" err="error creating HTTP client: unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-pods
+2020-06-27_09:47:35.98623 level=error ts=2020-06-27T09:47:35.985Z caller=manager.go:193 component="scrape manager" msg="error creating new scrape pool" err="error creating HTTP client: unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-nodes
+2020-06-27_09:47:35.98689 level=error ts=2020-06-27T09:47:35.986Z caller=manager.go:193 component="scrape manager" msg="error creating new scrape pool" err="error creating HTTP client: unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-cadvisor
+2020-06-27_09:48:19.49805 level=warn ts=2020-06-27T09:48:19.497Z caller=main.go:507 msg="Received SIGTERM, exiting gracefully..."
+2020-06-27_09:48:19.49966 level=info ts=2020-06-27T09:48:19.498Z caller=main.go:530 msg="Stopping scrape discovery manager..."
+2020-06-27_09:48:19.50019 level=info ts=2020-06-27T09:48:19.498Z caller=main.go:544 msg="Stopping notify discovery manager..."
+2020-06-27_09:48:19.50066 level=info ts=2020-06-27T09:48:19.498Z caller=main.go:566 msg="Stopping scrape manager..."
+2020-06-27_09:48:19.50159 level=info ts=2020-06-27T09:48:19.498Z caller=main.go:540 msg="Notify discovery manager stopped"
+2020-06-27_09:48:19.50190 level=info ts=2020-06-27T09:48:19.498Z caller=main.go:526 msg="Scrape discovery manager stopped"
+2020-06-27_09:48:19.50234 level=info ts=2020-06-27T09:48:19.499Z caller=manager.go:845 component="rule manager" msg="Stopping rule manager..."
+2020-06-27_09:48:19.50268 level=info ts=2020-06-27T09:48:19.499Z caller=manager.go:851 component="rule manager" msg="Rule manager stopped"
+2020-06-27_09:48:19.50301 level=info ts=2020-06-27T09:48:19.499Z caller=main.go:560 msg="Scrape manager stopped"
+2020-06-27_09:48:19.50344 level=info ts=2020-06-27T09:48:19.500Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+2020-06-27_09:48:19.50372 level=info ts=2020-06-27T09:48:19.500Z caller=main.go:731 msg="Notifier manager stopped"
+2020-06-27_09:48:19.50437 level=info ts=2020-06-27T09:48:19.501Z caller=main.go:743 msg="See you next time!"
+2020-06-27_09:48:19.61220 level=info ts=2020-06-27T09:48:19.612Z caller=main.go:295 msg="no time or size retention was set so using the default time retention" duration=15d
+2020-06-27_09:48:19.61285 level=info ts=2020-06-27T09:48:19.612Z caller=main.go:331 msg="Starting Prometheus" version="(version=2.16.0, branch=master, revision=)"
+2020-06-27_09:48:19.61328 level=info ts=2020-06-27T09:48:19.612Z caller=main.go:332 build_context="(go=go1.13.9, user=GitLab-Omnibus, date=)"
+2020-06-27_09:48:19.61362 level=info ts=2020-06-27T09:48:19.612Z caller=main.go:333 host_details="(Linux 4.19.76-linuxkit #1 SMP Tue May 26 11:42:35 UTC 2020 x86_64 gitlab.example.com (none))"
+2020-06-27_09:48:19.61402 level=info ts=2020-06-27T09:48:19.612Z caller=main.go:334 fd_limits="(soft=50000, hard=50000)"
+2020-06-27_09:48:19.61432 level=info ts=2020-06-27T09:48:19.612Z caller=main.go:335 vm_limits="(soft=unlimited, hard=unlimited)"
+2020-06-27_09:48:19.62044 level=info ts=2020-06-27T09:48:19.620Z caller=main.go:661 msg="Starting TSDB ..."
+2020-06-27_09:48:19.62080 level=info ts=2020-06-27T09:48:19.620Z caller=web.go:508 component=web msg="Start listening for connections" address=localhost:9090
+2020-06-27_09:48:19.63824 level=info ts=2020-06-27T09:48:19.638Z caller=head.go:577 component=tsdb msg="replaying WAL, this may take awhile"
+2020-06-27_09:48:19.73755 level=info ts=2020-06-27T09:48:19.737Z caller=head.go:625 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=3
+2020-06-27_09:48:19.82458 level=info ts=2020-06-27T09:48:19.824Z caller=head.go:625 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=3
+2020-06-27_09:48:19.83375 level=info ts=2020-06-27T09:48:19.833Z caller=head.go:625 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=3
+2020-06-27_09:48:19.83662 level=info ts=2020-06-27T09:48:19.836Z caller=head.go:625 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=3
+2020-06-27_09:48:19.84860 level=info ts=2020-06-27T09:48:19.848Z caller=main.go:676 fs_type=65735546
+2020-06-27_09:48:19.84899 level=info ts=2020-06-27T09:48:19.848Z caller=main.go:677 msg="TSDB started"
+2020-06-27_09:48:19.84938 level=info ts=2020-06-27T09:48:19.848Z caller=main.go:747 msg="Loading configuration file" filename=/var/opt/gitlab/prometheus/prometheus.yml
+2020-06-27_09:48:19.85277 level=error ts=2020-06-27T09:48:19.852Z caller=manager.go:342 component="discovery manager scrape" msg="Cannot create service discovery" err="unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=*kubernetes.SDConfig
+2020-06-27_09:48:19.85309 level=error ts=2020-06-27T09:48:19.852Z caller=manager.go:342 component="discovery manager scrape" msg="Cannot create service discovery" err="unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=*kubernetes.SDConfig
+2020-06-27_09:48:19.85342 level=error ts=2020-06-27T09:48:19.852Z caller=manager.go:342 component="discovery manager scrape" msg="Cannot create service discovery" err="unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=*kubernetes.SDConfig
+2020-06-27_09:48:19.87069 level=info ts=2020-06-27T09:48:19.870Z caller=main.go:775 msg="Completed loading of configuration file" filename=/var/opt/gitlab/prometheus/prometheus.yml
+2020-06-27_09:48:19.87125 level=info ts=2020-06-27T09:48:19.870Z caller=main.go:630 msg="Server is ready to receive web requests."
+2020-06-27_09:48:24.87333 level=error ts=2020-06-27T09:48:24.873Z caller=manager.go:193 component="scrape manager" msg="error creating new scrape pool" err="error creating HTTP client: unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-cadvisor
+2020-06-27_09:48:24.87397 level=error ts=2020-06-27T09:48:24.873Z caller=manager.go:193 component="scrape manager" msg="error creating new scrape pool" err="error creating HTTP client: unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-pods
+2020-06-27_09:48:24.87431 level=error ts=2020-06-27T09:48:24.873Z caller=manager.go:193 component="scrape manager" msg="error creating new scrape pool" err="error creating HTTP client: unable to load specified CA cert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-nodes
+2020-06-27_12:33:34.69929 level=info ts=2020-06-27T12:33:34.698Z caller=compact.go:496 component=tsdb msg="write block" mint=1593250413647 maxt=1593252000000 ulid=01EBTW9J72D1BWDT2GKGDZMQEH duration=776.650333ms
+2020-06-27_12:33:34.82711 level=info ts=2020-06-27T12:33:34.826Z caller=head.go:661 component=tsdb msg="head GC completed" duration=30.568216ms
+2020-06-27_12:41:35.11330 level=error ts=2020-06-27T12:41:35.112Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_12:43:37.17618 level=error ts=2020-06-27T12:43:37.176Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_12:44:39.18403 level=error ts=2020-06-27T12:44:39.183Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_12:48:43.30915 level=error ts=2020-06-27T12:48:43.308Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_12:49:45.34237 level=error ts=2020-06-27T12:49:45.342Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data/01EBTW9J72D1BWDT2GKGDZMQEH/meta.json: too many open files"
+2020-06-27_12:50:49.35043 level=error ts=2020-06-27T12:50:49.350Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_12:51:57.35482 level=error ts=2020-06-27T12:51:57.354Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_12:53:13.36349 level=error ts=2020-06-27T12:53:13.361Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_12:54:45.37137 level=error ts=2020-06-27T12:54:45.371Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_12:56:49.37971 level=error ts=2020-06-27T12:56:49.379Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_12:59:49.39050 level=error ts=2020-06-27T12:59:49.390Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:00:49.40112 level=error ts=2020-06-27T13:00:49.400Z caller=compact.go:539 component=tsdb msg="removed tmp folder after failed compaction" err="open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:00:49.40178 level=error ts=2020-06-27T13:00:49.401Z caller=db.go:617 component=tsdb msg="compaction failed" err="persist head block: open chunk writer: open /var/opt/gitlab/prometheus/data/01EBTXVFBGTXA5WRPKY9WD6VFB.tmp/chunks: too many open files"
+2020-06-27_13:01:49.41300 level=error ts=2020-06-27T13:01:49.412Z caller=compact.go:539 component=tsdb msg="removed tmp folder after failed compaction" err="open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:01:49.41391 level=error ts=2020-06-27T13:01:49.412Z caller=db.go:617 component=tsdb msg="compaction failed" err="persist head block: open chunk writer: open /var/opt/gitlab/prometheus/data/01EBTXX9YT53KYTKW6DB41MT3Y.tmp/chunks: too many open files"
+2020-06-27_13:02:49.43910 level=error ts=2020-06-27T13:02:49.439Z caller=compact.go:539 component=tsdb msg="removed tmp folder after failed compaction" err="open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:02:49.44014 level=error ts=2020-06-27T13:02:49.439Z caller=db.go:617 component=tsdb msg="compaction failed" err="persist head block: open index writer: open /var/opt/gitlab/prometheus/data/01EBTXZ4J7H7PVRFN957B893K1.tmp/index_tmp_p: too many open files"
+2020-06-27_13:03:49.45195 level=error ts=2020-06-27T13:03:49.451Z caller=compact.go:539 component=tsdb msg="removed tmp folder after failed compaction" err="open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:03:49.45276 level=error ts=2020-06-27T13:03:49.451Z caller=db.go:617 component=tsdb msg="compaction failed" err="persist head block: open chunk writer: open /var/opt/gitlab/prometheus/data/01EBTY0Z61BBDC6KNMSWYQFJ49.tmp/chunks: too many open files"
+2020-06-27_13:04:49.46241 level=error ts=2020-06-27T13:04:49.462Z caller=compact.go:539 component=tsdb msg="removed tmp folder after failed compaction" err="open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:04:49.46342 level=error ts=2020-06-27T13:04:49.462Z caller=db.go:617 component=tsdb msg="compaction failed" err="persist head block: open chunk writer: open /var/opt/gitlab/prometheus/data/01EBTY2SSDW4H2283EDG7SPVP3.tmp/chunks: too many open files"
+2020-06-27_13:05:49.47369 level=error ts=2020-06-27T13:05:49.473Z caller=compact.go:539 component=tsdb msg="removed tmp folder after failed compaction" err="open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:05:49.47439 level=error ts=2020-06-27T13:05:49.473Z caller=db.go:617 component=tsdb msg="compaction failed" err="persist head block: open chunk writer: open /var/opt/gitlab/prometheus/data/01EBTY4MCRSY2EKCVHCRQYVYXK.tmp/chunks: too many open files"
+2020-06-27_13:06:49.50814 level=error ts=2020-06-27T13:06:49.508Z caller=compact.go:539 component=tsdb msg="removed tmp folder after failed compaction" err="open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:06:49.50906 level=error ts=2020-06-27T13:06:49.508Z caller=db.go:617 component=tsdb msg="compaction failed" err="persist head block: open index writer: open /var/opt/gitlab/prometheus/data/01EBTY6F04NJW41TH8GD7ETTMZ.tmp/index_tmp_p: too many open files"
+2020-06-27_13:07:49.52204 level=error ts=2020-06-27T13:07:49.521Z caller=compact.go:539 component=tsdb msg="removed tmp folder after failed compaction" err="open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:07:49.52249 level=error ts=2020-06-27T13:07:49.521Z caller=db.go:617 component=tsdb msg="compaction failed" err="persist head block: open chunk writer: open /var/opt/gitlab/prometheus/data/01EBTY89M6WJDMCDEP9R8R1XWK.tmp/chunks: too many open files"
+2020-06-27_13:08:49.56428 level=error ts=2020-06-27T13:08:49.564Z caller=db.go:617 component=tsdb msg="compaction failed" err="persist head block: open chunk writer: open /var/opt/gitlab/prometheus/data/01EBTYA47MQ1SXAN9Y6RPT570B.tmp/chunks: too many open files"
+2020-06-27_13:09:49.57910 level=error ts=2020-06-27T13:09:49.578Z caller=compact.go:539 component=tsdb msg="removed tmp folder after failed compaction" err="open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:09:49.57994 level=error ts=2020-06-27T13:09:49.579Z caller=db.go:617 component=tsdb msg="compaction failed" err="persist head block: open chunk writer: open /var/opt/gitlab/prometheus/data/01EBTYBYVYNYS7WGN5SWA3EK1J.tmp/chunks: too many open files"
+2020-06-27_13:10:50.21596 level=info ts=2020-06-27T13:10:50.215Z caller=compact.go:496 component=tsdb msg="write block" mint=1593252000000 maxt=1593259200000 ulid=01EBTYDSFCH68ER7077SXR75ZA duration=635.062526ms
+2020-06-27_13:10:50.38762 level=info ts=2020-06-27T13:10:50.387Z caller=head.go:661 component=tsdb msg="head GC completed" duration=23.154006ms
+2020-06-27_13:10:50.58824 level=info ts=2020-06-27T13:10:50.588Z caller=head.go:731 component=tsdb msg="WAL checkpoint complete" first=0 last=1 duration=200.469859ms
+2020-06-27_13:14:50.73217 level=error ts=2020-06-27T13:14:50.732Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:16:52.77319 level=error ts=2020-06-27T13:16:52.773Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:19:54.84261 level=error ts=2020-06-27T13:19:54.842Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:20:56.84710 level=error ts=2020-06-27T13:20:56.846Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:22:00.85128 level=error ts=2020-06-27T13:22:00.851Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:23:08.85798 level=error ts=2020-06-27T13:23:08.857Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:24:24.86319 level=error ts=2020-06-27T13:24:24.863Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:29:56.97767 level=error ts=2020-06-27T13:29:56.977Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:30:58.98244 level=error ts=2020-06-27T13:30:58.982Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:33:03.01085 level=error ts=2020-06-27T13:33:03.010Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:34:05.01471 level=error ts=2020-06-27T13:34:05.014Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:35:09.01909 level=error ts=2020-06-27T13:35:09.018Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:37:17.05077 level=error ts=2020-06-27T13:37:17.050Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:38:19.05711 level=error ts=2020-06-27T13:38:19.057Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:39:23.06175 level=error ts=2020-06-27T13:39:23.061Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:40:31.06707 level=error ts=2020-06-27T13:40:31.066Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data: too many open files"
+2020-06-27_13:42:47.12955 level=error ts=2020-06-27T13:42:47.129Z caller=db.go:617 component=tsdb msg="compaction failed" err="plan compaction: open /var/opt/gitlab/prometheus/data/01EBTW9J72D1BWDT2GKGDZMQEH/meta.json: too many open files"
+2020-06-27_13:43:23.39289 level=warn ts=2020-06-27T13:43:23.391Z caller=main.go:507 msg="Received SIGTERM, exiting gracefully..."
+2020-06-27_13:43:23.39364 level=info ts=2020-06-27T13:43:23.392Z caller=main.go:530 msg="Stopping scrape discovery manager..."
+2020-06-27_13:43:23.39428 level=info ts=2020-06-27T13:43:23.392Z caller=main.go:544 msg="Stopping notify discovery manager..."
+2020-06-27_13:43:23.39548 level=info ts=2020-06-27T13:43:23.392Z caller=main.go:566 msg="Stopping scrape manager..."
+2020-06-27_13:43:23.39628 level=info ts=2020-06-27T13:43:23.392Z caller=main.go:540 msg="Notify discovery manager stopped"
+2020-06-27_13:43:23.39697 level=info ts=2020-06-27T13:43:23.392Z caller=main.go:526 msg="Scrape discovery manager stopped"
+2020-06-27_13:43:23.39769 level=info ts=2020-06-27T13:43:23.392Z caller=manager.go:845 component="rule manager" msg="Stopping rule manager..."
+2020-06-27_13:43:23.39862 level=info ts=2020-06-27T13:43:23.392Z caller=main.go:560 msg="Scrape manager stopped"
+2020-06-27_13:43:23.39976 level=info ts=2020-06-27T13:43:23.392Z caller=manager.go:851 component="rule manager" msg="Rule manager stopped"
+2020-06-27_13:43:23.40026 level=info ts=2020-06-27T13:43:23.398Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+2020-06-27_13:43:23.40104 level=info ts=2020-06-27T13:43:23.398Z caller=main.go:731 msg="Notifier manager stopped"
+2020-06-27_13:43:23.40163 level=info ts=2020-06-27T13:43:23.399Z caller=main.go:743 msg="See you next time!"

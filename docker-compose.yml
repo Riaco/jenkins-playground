@@ -22,16 +22,16 @@ services:
   #   networks:
   #     - jenkins_net
 
-  remote_host:
-    container_name: remote-host
-    image: remote-host
-    # If remote-host image doesn't exist. build it
-    build:
-      context: centos8
-    ports:
-      - "22:22"
-    networks:
-      - jenkins_net
+  # remote_host:
+  #   container_name: remote-host
+  #   image: remote-host
+  #   # If remote-host image doesn't exist. build it
+  #   build:
+  #     context: centos8
+  #   ports:
+  #     - "22:22"
+  #   networks:
+  #     - jenkins_net
 
   db_host:
     container_name: db
@@ -42,6 +42,18 @@ services:
       - "$PWD/db_data:/var/lib/mysql"
     networks:
       - jenkins_net
+
+  # gitlab:
+  #   container_name: git-server
+  #   image: "gitlab/gitlab-ce:latest"
+  #   hostname: "gitlab.example.com"    ports:
+  #     - "8090:80"
+  #   volumes:
+  #     - "$PWD/gitlab/configconfig:/etc/gitlab"
+  #     - "$PWD/gitlab/config/logs:/var/log/gitlab"
+  #     - "$PWD/gitlab/config/data:/var/opt/gitlab"
+  #   networks:
+  #     - jenkins_net
 # Create network
 networks:
   jenkins_net:

@@ -1,0 +1,26 @@
+2020-06-27_09:47:36.59088 level=info ts=2020-06-27T09:47:36.590Z caller=main.go:231 msg="Starting Alertmanager" version="(version=0.20.0, branch=master, revision=)"
+2020-06-27_09:47:36.59148 level=info ts=2020-06-27T09:47:36.590Z caller=main.go:232 build_context="(go=go1.13.9, user=GitLab-Omnibus, date=)"
+2020-06-27_09:47:36.59311 level=info ts=2020-06-27T09:47:36.592Z caller=cluster.go:161 component=cluster msg="setting advertise address explicitly" addr=172.18.0.3 port=9094
+2020-06-27_09:47:36.59805 level=info ts=2020-06-27T09:47:36.597Z caller=cluster.go:623 component=cluster msg="Waiting for gossip to settle..." interval=2s
+2020-06-27_09:47:36.63567 level=info ts=2020-06-27T09:47:36.635Z caller=coordinator.go:119 component=configuration msg="Loading configuration file" file=/var/opt/gitlab/alertmanager/alertmanager.yml
+2020-06-27_09:47:36.64049 level=info ts=2020-06-27T09:47:36.640Z caller=coordinator.go:131 component=configuration msg="Completed loading of configuration file" file=/var/opt/gitlab/alertmanager/alertmanager.yml
+2020-06-27_09:47:36.64496 level=info ts=2020-06-27T09:47:36.644Z caller=main.go:497 msg=Listening address=localhost:9093
+2020-06-27_09:47:38.59827 level=info ts=2020-06-27T09:47:38.598Z caller=cluster.go:648 component=cluster msg="gossip not settled" polls=0 before=0 now=1 elapsed=2.000146216s
+2020-06-27_09:47:46.59970 level=info ts=2020-06-27T09:47:46.599Z caller=cluster.go:640 component=cluster msg="gossip settled; proceeding" elapsed=10.001668102s
+2020-06-27_09:48:19.93108 level=info ts=2020-06-27T09:48:19.930Z caller=main.go:536 msg="Received SIGTERM, exiting gracefully..."
+2020-06-27_09:48:20.04194 level=info ts=2020-06-27T09:48:20.041Z caller=main.go:231 msg="Starting Alertmanager" version="(version=0.20.0, branch=master, revision=)"
+2020-06-27_09:48:20.04278 level=info ts=2020-06-27T09:48:20.041Z caller=main.go:232 build_context="(go=go1.13.9, user=GitLab-Omnibus, date=)"
+2020-06-27_09:48:20.04868 level=info ts=2020-06-27T09:48:20.047Z caller=cluster.go:161 component=cluster msg="setting advertise address explicitly" addr=172.18.0.3 port=9094
+2020-06-27_09:48:20.05623 level=info ts=2020-06-27T09:48:20.055Z caller=cluster.go:623 component=cluster msg="Waiting for gossip to settle..." interval=2s
+2020-06-27_09:48:20.10907 level=info ts=2020-06-27T09:48:20.108Z caller=coordinator.go:119 component=configuration msg="Loading configuration file" file=/var/opt/gitlab/alertmanager/alertmanager.yml
+2020-06-27_09:48:20.11414 level=info ts=2020-06-27T09:48:20.114Z caller=coordinator.go:131 component=configuration msg="Completed loading of configuration file" file=/var/opt/gitlab/alertmanager/alertmanager.yml
+2020-06-27_09:48:20.11908 level=info ts=2020-06-27T09:48:20.118Z caller=main.go:497 msg=Listening address=localhost:9093
+2020-06-27_09:48:22.05659 level=info ts=2020-06-27T09:48:22.056Z caller=cluster.go:648 component=cluster msg="gossip not settled" polls=0 before=0 now=1 elapsed=2.000211907s
+2020-06-27_09:48:30.05791 level=info ts=2020-06-27T09:48:30.057Z caller=cluster.go:640 component=cluster msg="gossip settled; proceeding" elapsed=10.001451531s
+2020-06-27_13:03:20.36558 level=error ts=2020-06-27T13:03:20.365Z caller=nflog.go:365 component=nflog msg="Running maintenance failed" err="open /var/opt/gitlab/alertmanager/data/nflog.258d099a10f0f971: too many open files"
+2020-06-27_13:03:20.36763 level=info ts=2020-06-27T13:03:20.367Z caller=silence.go:379 component=silences msg="Running maintenance failed" err="open /var/opt/gitlab/alertmanager/data/silences.3bbc3e23f58d5af7: too many open files"
+2020-06-27_13:18:20.38841 level=error ts=2020-06-27T13:18:20.388Z caller=nflog.go:365 component=nflog msg="Running maintenance failed" err="open /var/opt/gitlab/alertmanager/data/nflog.3f72c58be3fc2e8c: too many open files"
+2020-06-27_13:18:20.38956 level=info ts=2020-06-27T13:18:20.389Z caller=silence.go:379 component=silences msg="Running maintenance failed" err="open /var/opt/gitlab/alertmanager/data/silences.5b1f636672d32db8: too many open files"
+2020-06-27_13:33:20.41076 level=error ts=2020-06-27T13:33:20.410Z caller=nflog.go:365 component=nflog msg="Running maintenance failed" err="open /var/opt/gitlab/alertmanager/data/nflog.2ffa0d055d2f1efd: too many open files"
+2020-06-27_13:33:20.41282 level=info ts=2020-06-27T13:33:20.412Z caller=silence.go:379 component=silences msg="Running maintenance failed" err="open /var/opt/gitlab/alertmanager/data/silences.5fe68a069ab1b577: too many open files"
+2020-06-27_13:43:19.56326 level=info ts=2020-06-27T13:43:19.562Z caller=main.go:536 msg="Received SIGTERM, exiting gracefully..."

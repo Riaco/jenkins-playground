@@ -1,0 +1,17 @@
+{
+	"ulid": "01EBTYDSFCH68ER7077SXR75ZA",
+	"minTime": 1593252000000,
+	"maxTime": 1593259200000,
+	"stats": {
+		"numSamples": 5627717,
+		"numSeries": 11943,
+		"numChunks": 46611
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01EBTYDSFCH68ER7077SXR75ZA"
+		]
+	},
+	"version": 1
+}

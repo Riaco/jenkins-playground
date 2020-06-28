@@ -1,0 +1,39 @@
+2020-06-27_09:47:48.71933 t=2020-06-27T09:47:48+0000 lvl=info msg="Starting Grafana" logger=server version=7.0.3 commit=00ee734baf branch=HEAD compiled=2020-06-03T15:19:31+0000
+2020-06-27_09:47:48.71980 t=2020-06-27T09:47:48+0000 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2020-06-27_09:47:48.72014 t=2020-06-27T09:47:48+0000 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2020-06-27_09:47:48.72060 t=2020-06-27T09:47:48+0000 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2020-06-27_09:47:48.72099 t=2020-06-27T09:47:48+0000 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2020-06-27_09:47:48.72132 t=2020-06-27T09:47:48+0000 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2020-06-27_09:47:48.72163 t=2020-06-27T09:47:48+0000 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2020-06-27_09:47:48.72201 t=2020-06-27T09:47:48+0000 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2020-06-27_09:47:48.72232 t=2020-06-27T09:47:48+0000 lvl=info msg="App mode production" logger=settings
+2020-06-27_09:47:48.72267 t=2020-06-27T09:47:48+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2020-06-27_09:47:48.72466 t=2020-06-27T09:47:48+0000 lvl=info msg="Starting DB migration" logger=migrator
+2020-06-27_09:47:48.75718 t=2020-06-27T09:47:48+0000 lvl=info msg="Starting plugin search" logger=plugins
+2020-06-27_09:47:50.31962 t=2020-06-27T09:47:49+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=127.0.0.1:3000 protocol=http subUrl=/-/grafana socket=
+2020-06-27_09:48:20.79983 t=2020-06-27T09:48:20+0000 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+2020-06-27_09:48:20.80067 t=2020-06-27T09:48:20+0000 lvl=info msg="Stopped Stream Manager"
+2020-06-27_09:48:20.87099 t=2020-06-27T09:48:20+0000 lvl=info msg="Starting Grafana" logger=server version=7.0.3 commit=00ee734baf branch=HEAD compiled=2020-06-03T15:19:31+0000
+2020-06-27_09:48:20.87147 t=2020-06-27T09:48:20+0000 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/conf/defaults.ini
+2020-06-27_09:48:20.87194 t=2020-06-27T09:48:20+0000 lvl=info msg="Config loaded from" logger=settings file=/var/opt/gitlab/grafana/grafana.ini
+2020-06-27_09:48:20.87245 t=2020-06-27T09:48:20+0000 lvl=info msg="Path Home" logger=settings path=/var/opt/gitlab/grafana
+2020-06-27_09:48:20.87323 t=2020-06-27T09:48:20+0000 lvl=info msg="Path Data" logger=settings path=/var/opt/gitlab/grafana/data
+2020-06-27_09:48:20.87373 t=2020-06-27T09:48:20+0000 lvl=info msg="Path Logs" logger=settings path=/var/log/gitlab/grafana
+2020-06-27_09:48:20.87427 t=2020-06-27T09:48:20+0000 lvl=info msg="Path Plugins" logger=settings path=/var/opt/gitlab/grafana/data/plugins
+2020-06-27_09:48:20.87484 t=2020-06-27T09:48:20+0000 lvl=info msg="Path Provisioning" logger=settings path=/var/opt/gitlab/grafana/provisioning
+2020-06-27_09:48:20.87531 t=2020-06-27T09:48:20+0000 lvl=info msg="App mode production" logger=settings
+2020-06-27_09:48:20.87598 t=2020-06-27T09:48:20+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+2020-06-27_09:48:20.87640 t=2020-06-27T09:48:20+0000 lvl=info msg="Starting DB migration" logger=migrator
+2020-06-27_09:48:20.91207 t=2020-06-27T09:48:20+0000 lvl=info msg="Starting plugin search" logger=plugins
+2020-06-27_09:48:21.60665 t=2020-06-27T09:48:21+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=127.0.0.1:3000 protocol=http subUrl=/-/grafana socket=
+2020-06-27_12:38:21.87247 t=2020-06-27T12:38:21+0000 lvl=eror msg="Problem reading image dir" logger=cleanup error="open /var/opt/gitlab/grafana/data/png: too many open files"
+2020-06-27_12:58:21.91155 t=2020-06-27T12:58:21+0000 lvl=eror msg="Problem reading image dir" logger=cleanup error="open /var/opt/gitlab/grafana/data/png: too many open files"
+2020-06-27_12:58:21.94815 t=2020-06-27T12:58:21+0000 lvl=eror msg="failed to lock and execute cleanup of old login attempts" logger=cleanup error="unable to open database file"
+2020-06-27_13:08:21.92930 t=2020-06-27T13:08:21+0000 lvl=eror msg="Problem reading image dir" logger=cleanup error="open /var/opt/gitlab/grafana/data/png: too many open files"
+2020-06-27_13:08:21.94244 t=2020-06-27T13:08:21+0000 lvl=eror msg="failed to lock and execute cleanup of old login attempts" logger=cleanup error="unable to open database file"
+2020-06-27_13:18:21.93547 t=2020-06-27T13:18:21+0000 lvl=eror msg="Problem reading image dir" logger=cleanup error="open /var/opt/gitlab/grafana/data/png: too many open files"
+2020-06-27_13:18:21.94572 t=2020-06-27T13:18:21+0000 lvl=eror msg="failed to lock and execute cleanup of old login attempts" logger=cleanup error="unable to open database file"
+2020-06-27_13:28:21.95229 t=2020-06-27T13:28:21+0000 lvl=eror msg="Problem reading image dir" logger=cleanup error="open /var/opt/gitlab/grafana/data/png: too many open files"
+2020-06-27_13:28:21.95820 t=2020-06-27T13:28:21+0000 lvl=eror msg="failed to lock and execute cleanup of old login attempts" logger=cleanup error="unable to open database file"
+2020-06-27_13:43:21.26483 t=2020-06-27T13:43:21+0000 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+2020-06-27_13:43:21.26682 t=2020-06-27T13:43:21+0000 lvl=info msg="Stopped Stream Manager"

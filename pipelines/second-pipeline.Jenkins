@@ -1,0 +1,50 @@
+pipeline{
+    agent any
+
+    environment {
+      NAME='riaco'
+      LASTNAME='kim'
+      // use credentials
+      secret = credentials('SECRET_TEXT')
+    }
+    stages {
+      stage('Build') {
+        steps {
+          sh 'echo "My first pipeline"'
+          sh '''
+            echo "By the way, I can do more stuff in here"
+            ls -lah
+          '''
+        }
+        steps {
+
+          sh 'echo $NAME $LASTNAME'
+          sh 'echo $secret'
+          // retry(3) {
+          //   sh 'I am not going to work :c'
+          // }
+
+          // timeout(time: 3, unit: 'SECONDS') {
+          //   sh 'sleep 5'
+          // }
+        }
+      }
+    }
+
+    post {
+      always {
+        echo 'I will always get executed :D'
+      }
+
+      success {
+
+      }
+      failure {
+
+      }
+      unstable {
+        echo 'If this is unstable'
+      }
+    }
+    
+}

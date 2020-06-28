@@ -1,0 +1,4 @@
+2020-06-27_12:57:12.92638 error: failed to open config file logrotate.conf: Too many open files
+2020-06-27_12:57:12.93183 error: error opening state file /var/opt/gitlab/logrotate/logrotate.status: Too many open files
+2020-06-27_12:57:12.93397 error: error opening state file /var/opt/gitlab/logrotate/logrotate.status: Too many open files
+2020-06-27_13:43:21.69010 Received TERM from runit, sending to process group (-PID)

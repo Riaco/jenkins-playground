@@ -1,0 +1,62 @@
+Started by user [8mha:////4ElGc5Xv+PM7h1fZ5coDNqH42t2O8GWy9PFaQJPcoLBVAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/maven_dsl
+No credentials specified
+Cloning the remote Git repository
+Cloning repository http://github.com/jenkins-docs/simple-java-maven-app
+ > git init /var/jenkins_home/workspace/maven_dsl # timeout=10
+Fetching upstream changes from http://github.com/jenkins-docs/simple-java-maven-app
+ > git --version # timeout=10
+ > git fetch --tags --progress -- http://github.com/jenkins-docs/simple-java-maven-app +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://github.com/jenkins-docs/simple-java-maven-app # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://github.com/jenkins-docs/simple-java-maven-app # timeout=10
+Fetching upstream changes from http://github.com/jenkins-docs/simple-java-maven-app
+ > git fetch --tags --progress -- http://github.com/jenkins-docs/simple-java-maven-app +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 0d85b7e1fd39bc6978511f92381aa10534ca4c1b (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0d85b7e1fd39bc6978511f92381aa10534ca4c1b # timeout=10
+Commit message: "Amend README.md"
+First time build. Skipping changelog.
+ > git tag -a -f -m Jenkins Build #1 jenkins-maven_dsl-1 # timeout=10
+FATAL: Could not apply tag jenkins-maven_dsl-1
+hudson.plugins.git.GitException: Command "git tag -a -f -m Jenkins Build #1 jenkins-maven_dsl-1" returned status code 128:
+stdout: 
+stderr: 
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'jenkins@f18f456e7946.(none)')
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2430)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2360)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2356)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:1916)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:1928)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.tag(CliGitAPIImpl.java:1795)
+Caused: hudson.plugins.git.GitException: Could not apply tag jenkins-maven_dsl-1
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.tag(CliGitAPIImpl.java:1797)
+	at hudson.plugins.git.GitAPI.tag(GitAPI.java:282)
+	at hudson.plugins.git.extensions.impl.PerBuildTag.onCheckoutCompleted(PerBuildTag.java:30)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1245)
+	at hudson.scm.SCM.checkout(SCM.java:505)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1206)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:574)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:499)
+	at hudson.model.Run.execute(Run.java:1880)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:428)
+Archiving artifacts
+Recording test results
+ERROR: Step ‘Publish JUnit test result report’ failed: No test report files were found. Configuration error?
+Finished: FAILURE
